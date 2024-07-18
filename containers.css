@@ -26,8 +26,9 @@ html, body
 {
     grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    padding:32px;
+    /* grid-template-columns: 2fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));/* an attempt for the bill and profile container to wrap*/
+    padding:16px 32px 32px 32px;
     box-shadow: 2px 6px 20px 2px #CCD1D8;
     margin-bottom: 6px;
 }

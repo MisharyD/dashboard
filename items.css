@@ -6,7 +6,8 @@
 }
 .logo
 {
-    width: max(10% ,70px);
+    min-width: 30px;
+    width: calc(10% + 10px);
     fill: white;
 }
 
@@ -35,12 +36,13 @@
     grid-column: 1 / 2;
 
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .searchBar
 {
-    width:70%;
+    /* min-width:90%; */
+    width:90%;
     outline:none;
     border-radius: 16px;
     border:0px;
@@ -50,7 +52,8 @@
 
 .searchLogo
 {
-    width: 3%;
+    min-width: 30px;
+    width: calc(3% + 10px)
 }
 
 .billAndProfileContainer
@@ -60,32 +63,71 @@
 
     display: flex;
     align-items: center;
-    gap:1rem;
-    justify-content: space-between;
-
+    gap:2rem;
+    justify-content: end;
+    align-items: center;
 }
 
-.profilePic
+.billAndProfileContainer .profilePic
 {
-    
+    width: calc(5% + 30px);
 }
 
 .bill
 {
-    width: max(5%,30px);
+    min-width: 30px;
+    width: clamp(30px, 5%, 50px);/* the lower bound doesnt work*/
     fill:black;
 }
 
 .greetingContainer
 {
     grid-column: 1 / 2;
+
+    display:flex;
+    gap:2rem;
 }
+
+.greetingContainer .profilePic
+{
+    width: calc(5% + 60px);
+    margin-top: 8px;
+    
+}
+
+.greetingContainer p
+{
+    font-size: 18px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.greetingContainer span
+{
+    font-size: 32px;
+    font-weight: bold;
+}
+
 
 .buttonsContainer
 {
     grid-column: 2 / 3;
-
+    min-width: fit-content;
     align-self: end;
+
+    display: flex;
+    justify-content: end;
+    gap:3rem;
+}
+
+.buttonsContainer button
+{
+    background-color: #1992D4;
+    color:white;
+    border-radius: 32px;
+    border: 0px;
+    padding:12px 36px;
+    font-size: 18px;
 }
 
 
