@@ -1,0 +1,62 @@
+html, body
+{
+    margin:0;
+    padding:0
+}
+
+.body
+{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+.sidebar
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3; /*implicit rows*/
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background-color: #1992D4;
+    color: white;
+    padding:8px   
+}
+
+.header
+{
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding:32px;
+}
+
+.main
+{
+    grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:32px;
+}
+
+.projects
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.announcemnts
+{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.trending
+{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
