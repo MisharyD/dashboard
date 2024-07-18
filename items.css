@@ -14,6 +14,7 @@
 .subject
 {
     font-size: 28px;
+    font-weight: bold;
     align-self: center;
 }
 
@@ -37,6 +38,7 @@
 
     display: flex;
     align-items: center;
+    gap:0.5rem;
 }
 
 .searchBar
@@ -47,7 +49,7 @@
     border-radius: 16px;
     border:0px;
     background-color: #E2E8F0; 
-    padding:6px;
+    padding:8px 16px;
 }
 
 .searchLogo
@@ -66,6 +68,11 @@
     gap:2rem;
     justify-content: end;
     align-items: center;
+}
+
+.billAndProfileContainer span
+{
+    font-size: 24px;
 }
 
 .billAndProfileContainer .profilePic
@@ -130,8 +137,65 @@
     font-size: 18px;
 }
 
-
-.profilePic
+/* main */
+.projectsTitle
 {
-    width: calc(10% + 50px)
+    margin-top:4px
+}
+
+.announcementsTitle
+{
+    margin-top:4px
+}
+
+.projectCard
+{
+    width:400px;
+    height:200px;
+    background-color: white;
+    padding:32px 20px;
+    border-radius: 8px;
+    border-left: 8px solid #F0B429;
+    box-shadow: 1px 1px 2px 0px #000000;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projectCard h1
+{
+    margin:0px;
+    font-size: 28px;
+}
+
+.projectCard p
+{
+    font-size: 18px;
+}
+
+.projectCardButtons
+{
+    align-self: flex-end;
+
+    display: flex;
+    gap:1.5rem;
+}
+
+.favouriteLogo
+{
+    min-width: 30px;
+    width: 30px;
+}
+
+.addToLaterLogo
+{
+    min-width: 30px;
+    width: 30px;
+}
+
+.shareLogo
+{
+    min-width: 30px;
+    width: 30px;
 }
