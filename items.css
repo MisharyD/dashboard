@@ -137,7 +137,7 @@
     font-size: 18px;
 }
 
-/* main */
+/* projects */
 .projectsTitle
 {
     margin-top:4px
@@ -156,7 +156,7 @@
     padding:32px 20px;
     border-radius: 8px;
     border-left: 8px solid #F0B429;
-    box-shadow: 1px 1px 2px 0px #000000;
+    box-shadow: 1px 1px 6px 0px #000000;
 
     display:flex;
     flex-direction: column;
@@ -198,4 +198,66 @@
 {
     min-width: 30px;
     width: 30px;
+}
+
+/* Announcements */
+
+.announcementCard
+{
+    background-color: white;
+    padding: 8px;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.announcementCard:last-child
+{
+    border-bottom: 0px;
+}
+
+.announcementCard h1
+{
+    font-size: 20px;
+}
+
+.announcementCard p
+{
+    font-size: 16px;
+}
+
+
+/* Trending */
+
+.trendingTitle
+{
+    margin-top: 0px;
+}
+
+.trendingCard
+{
+    display: flex;
+    gap:1rem;
+    padding:16px;
+    background-color: white;
+}
+
+.trendingCard:last-child
+{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.trendingCard:first-of-type
+{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.trendingCard .profilePic
+{
+    width: calc(10% + 30px);
+}
+
+.greeting p 
+{
+    margin:2px;
 }
