@@ -6,13 +6,13 @@
 }
 .logo
 {
-    width: calc(10% + 50px);
+    width: max(10% ,70px);
     fill: white;
 }
 
 .subject
 {
-    font-size: 32px;
+    font-size: 28px;
     align-self: center;
 }
 
@@ -26,4 +26,70 @@
     margin: 0px;
     padding: 0px;
     padding-left: 16px;
+}
+
+/*header*/
+
+.searchBarContainer
+{
+    grid-column: 1 / 2;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.searchBar
+{
+    width:70%;
+    outline:none;
+    border-radius: 16px;
+    border:0px;
+    background-color: #E2E8F0; 
+    padding:6px;
+}
+
+.searchLogo
+{
+    width: 3%;
+}
+
+.billAndProfileContainer
+{
+    grid-column: 2 / 3;
+    justify-self: end;
+
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: space-between;
+
+}
+
+.profilePic
+{
+    
+}
+
+.bill
+{
+    width: max(5%,30px);
+    fill:black;
+}
+
+.greetingContainer
+{
+    grid-column: 1 / 2;
+}
+
+.buttonsContainer
+{
+    grid-column: 2 / 3;
+
+    align-self: end;
+}
+
+
+.profilePic
+{
+    width: calc(10% + 50px)
 }
