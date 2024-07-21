@@ -10,6 +10,7 @@
 *
 {
     font-family:"robotoregular";
+    box-sizing: border-box;
 }
 
 html, body
@@ -53,7 +54,7 @@ html, body
 
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 7fr 9fr;    
+    gap:32px;
     padding:32px;
     background-color: #E2E8F0;
 }
@@ -64,7 +65,8 @@ html, body
     grid-row: 2 / 4;
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(450px,1fr));
+    gap: 34px;
 }
 
 .announcemnts
