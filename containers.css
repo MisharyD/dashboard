@@ -1,14 +1,15 @@
 @font-face {
-    font-family: 'robotoblack';
-    src: url('roboto-black-webfont.woff2') format('woff2'),
-         url('roboto-black-webfont.woff') format('woff');
+    font-family: 'robotoregular';
+    src: url('assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('assets/fonts/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
 }
 
 *
 {
-    font-family:"robotoblack";
+    font-family:"robotoregular";
 }
 
 html, body
@@ -21,7 +22,6 @@ html, body
 {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    font-family:"robotoblack";
 }
 .sidebar
 {
@@ -33,7 +33,7 @@ html, body
     gap: 3rem;
     background-color: #1992D4;
     color: white;
-    padding:8px   
+    padding:16px   
 }
 
 .header

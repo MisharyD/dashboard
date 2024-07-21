@@ -30,6 +30,13 @@
     padding-left: 16px;
 }
 
+.sidebar ul li 
+{
+    display:flex;
+    align-items: center;
+    gap:0.3rem;
+}
+
 /*header*/
 
 .searchBarContainer
